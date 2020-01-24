@@ -1,0 +1,12 @@
+function reverseInPlace(array) {
+    let strSplit = array.split("");
+    let temp = 0;
+    for (let i = 0; i <= strSplit.length/2; i++) {
+        temp = strSplit[i];
+        strSplit[i] = strSplit[(strSplit.length - 1) - i];
+        strSplit[(strSplit.length - 1) - i] = temp; 
+    }
+    console.log(strSplit);
+} 
+
+reverseInPlace("I AM OP");
